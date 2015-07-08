@@ -44,8 +44,8 @@ Wie du siehst, habe ich hier eine einfache Abfrage einer Webseite gemacht. Das w
 
 Genau an dieser Stelle passiert einiges an Magie bzw. der Compiler macht einiges was du bisher machen musstest. Durch das `await` wird die Methode `GetWebContentAsync` unterbrochen, bis `ReadLineAsync` den String von der Webseite geholt hat. Das heißt im Detail:
 
-1.  Der Aufrufer von `GetWebContentAsync`, also `Main`, wird weiter ausgeführt. 
-2.  Der Aufrufer wird wieder unterbrochen, wenn `ReadLineAsync` mit einem Resultat zurück ist.
+1.	Der Aufrufer von `GetWebContentAsync`, also `Main`, wird weiter ausgeführt.
+2.	Der Aufrufer wird wieder unterbrochen, wenn `ReadLineAsync` mit einem Resultat zurück ist.
 
 Wenn du nach dem Aufruf von `ReadLineAsync` noch etwas machen willst, bevor `await` aufgerufen wird und somit die asynchrone Methode unterbrochen wird, geht das auch:
 
@@ -83,19 +83,19 @@ Jan
 
 **Merke:**
 
-- `StreamReader` bietet verschiedene Async-Methoden an, um asynchron Daten aus dem Stream zu lesen.
-- Ein `await` vor dem Aufruf von `ReadLineAsync` macht alles Task-Handling und sorgt dafür, dass ein String oder NULL zurückgegeben wird.
-- Du kannst auch das `Task<string>` Objekt von `ReadLineAsync` verwenden, um beispielsweise andere Befehle auszuführen, bevor du `await` aufrufst.
-- Definierst du eine Methode mit dem `async` Schlüsselwort im Methodenkopf, muss im Methodenrumpf wenigstens einmal `await` verwendet werden.
+-	`StreamReader` bietet verschiedene Async-Methoden an, um asynchron Daten aus dem Stream zu lesen.
+-	Ein `await` vor dem Aufruf von `ReadLineAsync` macht alles Task-Handling und sorgt dafür, dass ein String oder NULL zurückgegeben wird.
+-	Du kannst auch das `Task<string>` Objekt von `ReadLineAsync` verwenden, um beispielsweise andere Befehle auszuführen, bevor du `await` aufrufst.
+-	Definierst du eine Methode mit dem `async` Schlüsselwort im Methodenkopf, muss im Methodenrumpf wenigstens einmal `await` verwendet werden.
 
 **Lernquiz:** Verwende folgende Fragen um das gelernte von heute zu festigen:
 
-- Welches Schlüsselwort verwendest du in Kombination mit `ReadLineAsync` um die Wartezeit nicht zu vertrödeln?
-- Was passiert durch die Verwendung von `await`?
-- Was muss innerhalb einer Methode aufgerufen werden, die `async` im Funktionskopf hat?
+-	Welches Schlüsselwort verwendest du in Kombination mit `ReadLineAsync` um die Wartezeit nicht zu vertrödeln?
+-	Was passiert durch die Verwendung von `await`?
+-	Was muss innerhalb einer Methode aufgerufen werden, die `async` im Funktionskopf hat?
 
 Am besten du schaust dir morgen und dann nochmal in ein paar Tagen die vorherigen Fragen an und beantwortest sie ohne den Text vorher gelesen zu haben.
 
 **Weitere Informationen:**
 
-- Den kompletten Quellcode zum heutigen Lernmoment findest du [hier](https://github.com/LernMoment/csharp-fortgeschrittene/tree/master/MulticastDelegateErstellen).
+-	Den kompletten Quellcode zum heutigen Lernmoment findest du [hier](https://github.com/LernMoment/csharp-fortgeschrittene/tree/master/MulticastDelegateErstellen).
