@@ -63,5 +63,5 @@ Am besten du schaust dir morgen und dann nochmal in ein paar Tagen die vorherige
 
 **Weitere Informationen:**
 
--	Den kompletten Quellcode zum heutigen Lernmoment findest du [hier](tbd).
+-	Den kompletten Quellcode zum heutigen Lernmoment findest du [hier](https://github.com/LernMoment/csharp-fortgeschrittene/tree/master/MulticastDelegateErstellen).
 -	Eine umfangreichere Erklärung findest du [hier](http://openbook.rheinwerk-verlag.de/visual_csharp_2012/1997_05_001.html#dodtpc31b034c-07a3-4c58-8260-f33ec088cf36).
