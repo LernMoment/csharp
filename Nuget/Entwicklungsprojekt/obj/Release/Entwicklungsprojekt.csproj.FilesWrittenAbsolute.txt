@@ -1,0 +1,6 @@
+/usr/src/app/source/Entwicklungsprojekt/obj/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/usr/src/app/build/EntwicklungsProjekt.exe.config
+/usr/src/app/build/EntwicklungsProjekt.exe.mdb
+/usr/src/app/build/EntwicklungsProjekt.exe
+/usr/src/app/source/Entwicklungsprojekt/obj/Release/EntwicklungsProjekt.exe
+/usr/src/app/source/Entwicklungsprojekt/obj/Release/EntwicklungsProjekt.exe.mdb
