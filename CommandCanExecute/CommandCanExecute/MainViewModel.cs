@@ -6,7 +6,7 @@ namespace CommandCanExecute
 {
     class MainViewModel : ViewModelBase
     {
-        private RelayCommand dateiSpeichernCommand;
+        private RelayCommand dateiSpeichernCommand = null;
         private bool istSpeichernAktiv = false;
 
         public ICommand DateiSpeichernCommand
