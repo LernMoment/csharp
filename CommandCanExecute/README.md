@@ -4,7 +4,7 @@ Egal welche, von den vielen Möglichkeiten zur Oberflächenerstellung in C# du v
 
 Wenn du [WPF](https://msdn.microsoft.com/de-de/library/aa970268(v=vs.110).aspx) und den MVVM (Model-View-ViewModel) Ansatz verwendest, dann kann dir das `ICommand` Interface behilflich sein. In diesem Interface gibt es die `CanExecute` Methode.
 
-Über diese Methode kann WPF heraus finden ob ein Kommando momentan ausgeführt werden kann oder nicht. Wenn du zum Beispiel etwas aus der Oberfläche heraus speichern möchtest, dieses aber länger dauert, könnte dein ViewModel ein asynchrones `SpeichernCommand` anbieten. 
+Über diese Methode kann WPF heraus finden ob ein Kommando momentan ausgeführt werden kann oder nicht. Wenn du zum Beispiel etwas aus der Oberfläche heraus speichern möchtest, dieses aber länger dauert, könnte dein ViewModel ein asynchrones `SpeichernCommand` anbieten.
 
 In dessen `Execute` Methode definierst du was wie gespeichert werden soll. In der `CanExecute` Methode sagst du, dass `Execute` nicht nochmal aufgerufen werden sollte, so lange es läuft.
 
@@ -18,7 +18,7 @@ Wenn du die Methode implementierst, gibst du also immer ein bool zurück. Der Au
 
 Hier die 3 Schritte um ein Bedienelement zu aktivieren / deaktivieren je nachdem ob die Funktion gerade verfügbar ist, oder nicht:
 
-### Schritt 1 - `ICommand` mit einer passenden `CanExecute` Methode implementieren:
+### Schritt 1 - `ICommand` mit einer passenden `CanExecute` Methode implementieren
 
 ```lang:cs
 class SpeichernCommand : ICommand
@@ -35,7 +35,7 @@ class SpeichernCommand : ICommand
 }
 ```
 
-### Schritt 2 - Das neu definierte Kommando im ViewModel verfügbar machen:
+### Schritt 2 - Das neu definierte Kommando im ViewModel verfügbar machen
 
 ```lang:cs
 private SpeichernCommand dateiSpeichernCommand = null;
