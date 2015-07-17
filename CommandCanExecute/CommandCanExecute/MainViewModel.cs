@@ -6,8 +6,7 @@ namespace CommandCanExecute
 {
     class MainViewModel : ViewModelBase
     {
-        private SpeichernCommand dateiSpeichernCommand;
-        private bool istSpeichernAktiv = false;
+        private SpeichernCommand dateiSpeichernCommand = null;
 
         public ICommand DateiSpeichernCommand
         {
