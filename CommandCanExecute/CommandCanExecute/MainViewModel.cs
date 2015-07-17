@@ -6,7 +6,7 @@ namespace CommandCanExecute
 {
     class MainViewModel : ViewModelBase
     {
-        private RelayCommand dateiSpeichernCommand = null;
+        private SpeichernCommand dateiSpeichernCommand;
         private bool istSpeichernAktiv = false;
 
         public ICommand DateiSpeichernCommand
@@ -15,18 +15,11 @@ namespace CommandCanExecute
             {
                 if (dateiSpeichernCommand == null)
                 {
-                    dateiSpeichernCommand = new RelayCommand(() => this.Speichern(), () => istSpeichernAktiv == false);
+                    dateiSpeichernCommand = new SpeichernCommand();
                 }
 
                 return dateiSpeichernCommand;
             }
-        }
-
-        private void Speichern()
-        {
-            istSpeichernAktiv = true;
-            MessageBox.Show("Speichere jetzt!");
-            istSpeichernAktiv = false;
         }
     }
 }
