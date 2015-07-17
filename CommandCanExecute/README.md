@@ -86,6 +86,6 @@ Am besten du schaust dir morgen und dann nochmal in ein paar Tagen die vorherige
 
 ## Weitere Informationen
 
--	Das komplette Beispielprogramm zu diesem LernMoment findest du [hier](tbd)
+-	Das komplette Beispielprogramm zu diesem LernMoment findest du [hier](https://github.com/LernMoment/csharp-fortgeschrittene/tree/master/CommandCanExecute)
 -	Um nicht immer `ICommand` implementieren zu müssen, kannst du eine Standardimplementierung mit Delegates oder ähnliches verwenden. Wie zum Beispiel das [RelayCommand](https://msdn.microsoft.com/en-us/magazine/dd419663.aspx). Leider gibt es keine gute Erklärung auf Deutsch.
 -	Das [RoutedCommand](https://msdn.microsoft.com/de-de/library/system.windows.input.routedcommand(v=vs.110).aspx), welches direkt im Framework definiert ist, kannst du auch verwenden. Es ist allerdings etwas komplizierter. Dafür kann es auch mehr.
