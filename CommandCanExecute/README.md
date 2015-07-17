@@ -60,7 +60,7 @@ public ICommand DateiSpeichernCommand
 <Button Content="Speichern" Command="{Binding DateiSpeichernCommand}" />
 ```
 
-Der letzte Schritt in Kombination mit der Implementierung von `CanExecuteChanged` (siehe [Quellcode](#links)) sind die "Magie", die es WPF ermöglichen automatisch deine `CanExecute` Methode aufzurufen, wenn sich an der Oberfläche etwas ändert. Zu dieser Magie mehr in einem weiteren LernMoment.
+Der letzte Schritt in Kombination mit der Implementierung von `CanExecuteChanged` (siehe [Quellcode](#weitere-informationen)) sind die "Magie", die es WPF ermöglichen automatisch deine `CanExecute` Methode aufzurufen, wenn sich an der Oberfläche etwas ändert. Zu dieser Magie mehr in einem weiteren LernMoment.
 
 Jetzt viel Spaß mit der Verbesserung deiner Oberfläche
 
@@ -72,7 +72,7 @@ Jan
 -	Achtung: sich ständig an und ausschaltende Bedienelemente können den Benutzer auch verwirren. Überleg dir also, ob das Verhalten für den Benutzer nachvollziehbar ist.
 -	WPF nimmt dir den Großteil der Arbeit ab, wenn du `ICommand` verwendest.
 -	Das Resultat der `CanExecute` Methode wird verwendet um die `IsEnabled` Eigenschaft vieler Bedienelemente zu setzen.
--	Kommandos immer wieder selber zu implementieren ist auf die Dauer zu kompliziert. Es gibt Alternativen [siehe unten](#links).
+-	Kommandos immer wieder selber zu implementieren ist auf die Dauer zu kompliziert. Es gibt Alternativen [siehe unten](#weitere-informationen).
 
 ## Lernquiz
 
@@ -84,7 +84,7 @@ Verwende folgende Fragen um das gelernte von heute zu festigen:
 
 Am besten du schaust dir morgen und dann nochmal in ein paar Tagen die vorherigen Fragen an und beantwortest sie ohne den Text vorher gelesen zu haben.
 
-## Weitere Informationen {#links}
+## Weitere Informationen
 
 -	Das komplette Beispielprogramm zu diesem LernMoment findest du [hier](tbd)
 -	Um nicht immer `ICommand` implementieren zu müssen, kannst du eine Standardimplementierung mit Delegates oder ähnliches verwenden. Wie zum Beispiel das [RelayCommand](https://msdn.microsoft.com/en-us/magazine/dd419663.aspx). Leider gibt es keine gute Erklärung auf Deutsch.
