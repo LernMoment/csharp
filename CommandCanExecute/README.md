@@ -18,7 +18,7 @@ Wenn du die Methode implementierst, gibst du also immer ein bool zurück. Der Au
 
 Hier die 3 Schritte um ein Bedienelement zu aktivieren / deaktivieren je nachdem ob die Funktion gerade verfügbar ist, oder nicht:
 
-1.	`ICommand` mit einer passenden `CanExecute` Methode implementieren:
+### Schritt 1 - `ICommand` mit einer passenden `CanExecute` Methode implementieren:
 
 ```lang:cs
 class SpeichernCommand : ICommand
@@ -35,7 +35,7 @@ class SpeichernCommand : ICommand
 }
 ```
 
-2.	Das neu definierte Kommando im ViewModel verfügbar machen:
+### Schritt 2 - Das neu definierte Kommando im ViewModel verfügbar machen:
 
 ```lang:cs
 private SpeichernCommand dateiSpeichernCommand = null;
@@ -54,7 +54,7 @@ public ICommand DateiSpeichernCommand
 }
 ```
 
-3.	Das Kommando und das Bedienelement verbinden
+### Schritt 3 - Das Kommando und das Bedienelement verbinden
 
 ```lang:xml
 <Button Content="Speichern" Command="{Binding DateiSpeichernCommand}" />
