@@ -8,5 +8,9 @@
 *.out
 *.o
 
+# Auch Verzeichnis mit nur binaries können wir ignorieren
+bin/
+obj/
+
 # Wir brauchen auch kein html im Repository. Dies können wir uns aus markdown generieren.
 *.html
