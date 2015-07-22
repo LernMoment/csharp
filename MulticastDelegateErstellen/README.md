@@ -2,7 +2,7 @@
 
 Wenn ich so drüber nachdenke, dann ist es schon logisch, aber ist dir bewusst, dass jedes Delegate ein Multicast Delegate ist? Außerdem, wie erzeugst du ein solches Multicast Delegate und wofür setzt du es ein? Schauen wir uns das ganze mal an.
 
-```lang:c#
+```cs
 using System;
 
 public delegate void DeinDelegate();
