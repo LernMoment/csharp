@@ -2,5 +2,5 @@
 
 Hier findest du den Quellcode zum [entsprechenden Artikel](http://www.lernmoment.de/csharp-programmieren/kovariante-felder/) auf [LernMoment.de](http://www.lernmoment.de).
 
-> Dieser LernMoment wird veröffentlicht am ???
+> Dieser LernMoment wird veröffentlicht am 03.08.2015
 
