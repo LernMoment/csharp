@@ -1,5 +1,6 @@
-# Lernmoment in CSharp - Kombinierte Formatierung für Konsole, Datei, ...
+# Lernmoment in CSharp - Kombinierte Formatierung
 
-Hier findest du den Quellcode zum [entsprechenden Artikel](http://www.lernmoment.de/csharp-programmieren/kombinierte-formatierung-fuer-konsole-datei/) auf [LernMoment.de](http://www.lernmoment.de).
+Hier findest du die Quelltexte zu den folgenden LernMomenten über das Thema **kombinierte Formatierung**:
 
-> Dieser LernMoment wird am 12.08.2015 veröffentlicht
+-	[Einführung](http://www.lernmoment.de/csharp-programmieren/kombinierte-formatierung-fuer-konsole-datei/) alles was du über das Thema wissen solltest. *Erscheint am 12.08.2015*
+-	[Zahlenformate](http://www.lernmoment.de/csharp-programmieren/kombinierte-formatierung-zahlenformate/) erklärt wie du Zahlen formatierst. *Erscheint am 18.08.2015*
