@@ -1,5 +1,5 @@
-# Lernmoment in CSharp - Was ist eigentlich Kontravarianz? Eine Erklärung am Beispiel von IComparable<T>.
+# Lernmoment in CSharp - Flag(ge) zeigen für Bitpopelei. Wie du mit [Flags] schnell ein Bitfeld aus deiner Enum machst.
 
-Hier findest du den Quelltext zum [entsprechenden Artikel](http://www.lernmoment.de/csharp-programmieren/kontravarianz-am-beispiel-von-icomparable/) auf [LernMoment.de](http://www.lernmoment.de).
+Hier findest du den Quelltext zum [entsprechenden Artikel](http://www.lernmoment.de/csharp-programmieren/flagge-zeigen-fuer-bitpopelei/) auf [LernMoment.de](http://www.lernmoment.de).
 
-> Dieser LernMoment wird am 25.08.2015 veröffentlicht
+> Dieser LernMoment wird am 26.08.2015 veröffentlicht
