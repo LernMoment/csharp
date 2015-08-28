@@ -10,11 +10,11 @@
         <KeyBinding Gesture="Ctrl+S"  Command="{Binding DateiSpeichernCommand}"/>
     </Window.InputBindings>
     <Grid>
-        <Menu>
-            <MenuItem Header="Einfügen" Command="ApplicationCommands.Paste" Width="75" />
-        </Menu>
         <TextBox BorderBrush="Black" BorderThickness="2" Margin="50" TextWrapping="Wrap">
-            Das "Einfügen" Menü wird aktiviert, wenn du in diese Textbox klickst.
+            Sobald diese TextBox den Fokus hat, kannst du mit der Tastenkombination "Ctrl + Shift + S" speichern.
+            <TextBox.InputBindings>
+                <KeyBinding Gesture="Ctrl+Shift+S" Command="{Binding DateiSpeichernCommand}"/>
+            </TextBox.InputBindings>
         </TextBox>
         <Button x:Name="speichernButton" Content="Speichern" Command="{Binding DateiSpeichernCommand}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,25"/>
     </Grid>
