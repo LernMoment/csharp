@@ -6,8 +6,10 @@
         xmlns:local="clr-namespace:CommandCanExecute"
         mc:Ignorable="d"
         Title="LernMoment - Command.CanExecute Beispiel" Height="350" Width="525">
+    <Window.InputBindings>
+        <KeyBinding Gesture="Ctrl+S"  Command="{Binding DateiSpeichernCommand}"/>
+    </Window.InputBindings>
     <Grid>
         <Button x:Name="speichernButton" Content="Speichern" Command="{Binding DateiSpeichernCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="80,80,0,0"/>
-
     </Grid>
 </Window>
