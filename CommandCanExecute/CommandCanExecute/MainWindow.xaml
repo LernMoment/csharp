@@ -5,9 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CommandCanExecute"
         mc:Ignorable="d"
-        Title="LernMoment - Command.CanExecute Beispiel" Height="350" Width="525">
+        Title="LernMoment - Command.CanExecute Beispiel" Height="350" Width="700">
+    <Window.InputBindings>
+        <KeyBinding Gesture="Ctrl+S"  Command="{Binding DateiSpeichernCommand}"/>
+    </Window.InputBindings>
     <Grid>
-        <Button x:Name="speichernButton" Content="Speichern" Command="{Binding DateiSpeichernCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="80,80,0,0"/>
-
+        <TextBox BorderBrush="Black" BorderThickness="2" Margin="50" TextWrapping="Wrap">
+            Sobald diese TextBox den Fokus hat, kannst du mit der Tastenkombination "Ctrl + Shift + S" speichern.
+            <TextBox.InputBindings>
+                <KeyBinding Gesture="Ctrl+Shift+S" Command="{Binding DateiSpeichernCommand}"/>
+            </TextBox.InputBindings>
+        </TextBox>
+        <Button x:Name="speichernButton" Content="Speichern" Command="{Binding DateiSpeichernCommand}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,25"/>
     </Grid>
 </Window>
