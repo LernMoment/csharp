@@ -77,20 +77,28 @@ class TabellarischeAusgabe
 
 	static void KopfzeileAusgeben()
 	{
-		Console.WriteLine("{0, -40}{1, -25}{2, -25}", "Name", "Veroeffentlicht am", "Tags");
-		Console.WriteLine(string.Empty.PadLeft(90, '─'));
+		Console.WriteLine("LERNMOMENTE:");
+		Console.WriteLine("{0, -40}{1, -25}{2, 35}", "Name", "Veroeffentlicht am", "Tags");
+		Console.WriteLine(string.Empty.PadLeft(100, '─'));
 	}
 
 	static void LernMomentAusgeben(LernMoment lm)
 	{
-		string tags = "{";
-		foreach(var tag in lm.Tags)
-		{
-			tags += tag + ", ";
-		}
-		tags = tags.Remove(tags.LastIndexOf(','));
-		tags += "}";
+		string tags = TagsFormatieren(lm.Tags);
 
-		Console.WriteLine("{0, -40}{1, -25:ddd dd MMMM yyyy}{2, -25}", lm.Name, lm.VeroeffentlichtAm, tags);
+		Console.WriteLine("{0, -40}{1, -25:ddd dd MMMM yyyy}{2, 35}", lm.Name, lm.VeroeffentlichtAm, tags);
+	}
+
+	static string TagsFormatieren(IEnumerable<Tag> tags)
+	{
+		string result = "{";
+		foreach(var tag in tags)
+		{
+			result += tag + ", ";
+		}
+		result = result.Remove(result.LastIndexOf(','));
+		result += "}";
+
+		return result;
 	}
 }
