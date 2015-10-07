@@ -1,6 +1,8 @@
 using System;
-using System.Collections.Generic;
 
+/// <summary>
+/// Ein Singleton basierend auf Lazy<T>
+/// </summary>
 sealed class MeinSingleton
 {
 	private static readonly Lazy<MeinSingleton> dieInstanz = new Lazy<MeinSingleton>(() => new MeinSingleton());
@@ -20,7 +22,7 @@ sealed class MeinSingleton
 
 
 /// <summary>
-/// 
+/// Zeigt wie das Singleton verwendet werden kann
 /// </summary>
 class UebungSingletonImplementieren
 {
